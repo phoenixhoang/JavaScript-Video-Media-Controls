@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>MMU Video</title>
+		<script src = "scripts/videoScript.js"></script>
+	</head>
+	
+	<body>
+	
+		<header>
+			<h1>Phoenix Hoang, 19043363, 05/12/19</h1>
+		</header>
+	
+		<section id = "videoContainer">
+			<video width = 640 height = 360 poster = "images/poster.jpg" >
+				<source src = "video/mp4/MMU.mp4" type = "video/mp4">
+				<source src = "video/webM//MMU.webm" type = "video/webM"> 
+				<p>Your browser doesn't support HTML5 video. You can download the video file <a href = "video.mp4/mp4/MMU.mp4"></a></p>
+			</video>
+			
+			<div id = "videoControls">
+				<button type = "button" id = "playPause">&#x25BA;</button>
+				<button type = "button" id = "muteUnmute">Mute</button>
+				<p id = "displayMmuVideoCurrentTime"></p>
+				<input type = "range" id = "seekBar" min = 0 max = 100 step = 1 value = 0>
+				<p id = "displayMmuVideoRemainingTime"></p>
+				<input type = "range" id = "volumeBar" min = 0 max = 10 step = 1 value = 5>
+				<p id = "displayVolumeValue"></p>
+				<input list = "playbackSpeedSelector" id = "playbackSpeedChoice" />
+				<datalist id = "playbackSpeedSelector">
+				<option value = 0.5>
+				<option value = 0.75>
+				<option value = 1>
+				<option value = 1.25>
+				<option value = 1.5>
+				<option value = 1.75>
+				<option value = 2>
+				</datalist>
+			</div>
+			
+		</section>	
+	</body>
+</html>
